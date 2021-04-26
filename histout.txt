@@ -40,7 +40,7 @@
    40  sudo docker
    41  sudo snap install docker
    42  ls
-   43  cd regsnp-django-app
+   43  cd regsnp_django_app
    44  ls
    45  cat output_views.py 
    46  ls
@@ -170,10 +170,10 @@
   170  sudo docker exec -w /extensions regsnps-gateway-dt python setup.py develop ; sudo docker exec regsnps-gateway-dt touch /code/django_airavata/wsgi.py
   171  sudo docker logs regsnps-gateway-dt
   172  ls
-  173  cd regsnp-django-app
+  173  cd regsnp_django_app
   174  ls
   175  cd ..
-  176  cd regsnp-django-app/data/
+  176  cd regsnp_django_app/data/
   177  ls
   178  cd ..
   179  ls
@@ -663,7 +663,7 @@
   663  xrandr --output LVDS-1 1600x900
   664  cd gateways19-tutorial/
   665  ls
-  666  cd regsnp-django-app
+  666  cd regsnp_django_app
   667  ls
   668  cd static/
   669  ls
@@ -675,7 +675,7 @@
   675  cd ..
   676  cd gateways19-tutorial/
   677  ls
-  678  cd regsnp-django-app
+  678  cd regsnp_django_app
   679  ls
   680  cd static/
   681  ls

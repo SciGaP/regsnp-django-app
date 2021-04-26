@@ -53,7 +53,7 @@
 <script>
     const { models, services, session, utils } = AiravataAPI;
     
-    utils.FetchUtils.get("/regsnp-django-app/languages/")
+    utils.FetchUtils.get("/regsnp_django_app/languages/")
         .then(data => {
             data.languages.forEach(language => {
                 $("#greeting-select").append(

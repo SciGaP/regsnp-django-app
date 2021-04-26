@@ -59,7 +59,7 @@ class SplicePredTable:
 		return {
 			'output': render_to_string(
 				
-				'regsnp-django-app/splicetable.html', {'outputFilePath' : link}),
+				'regsnp_django_app/splicetable.html', {'outputFilePath' : link}),
 			'js':"/static/js/datatable.js"
 			}
 			
@@ -76,7 +76,7 @@ class irneoOut:
 		return {
 			'output': render_to_string(
 				
-				'regsnp-django-app/irneoView.html'),
+				'regsnp_django_app/irneoView.html'),
 			'js':"/static/js/irneo.js"
 			}
 			

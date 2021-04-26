@@ -5,11 +5,11 @@ from django.http import JsonResponse
 
 @login_required
 def hello_world(request):
-    return render(request, "regsnp-django-app/hello.html")
+    return render(request, "regsnp_django_app/hello.html")
     
 @login_required
 def splice_res(request):
-    return render(request, "regsnp-django-app/splicetable.html")
+    return render(request, "regsnp_django_app/splicetable.html")
 
 
 @login_required

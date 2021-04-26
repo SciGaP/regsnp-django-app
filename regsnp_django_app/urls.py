@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 
 from . import views
 
-app_name = 'regsnp-django-app'
+app_name = 'regsnp_django_app'
 urlpatterns = [
     url(r'^hello/', views.hello_world, name="home"),
     url(r'^splicetable/', views.splice_res, name="splice"),
