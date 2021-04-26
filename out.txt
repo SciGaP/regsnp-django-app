@@ -1,0 +1,3 @@
+./regsnp_django_app/__pycache__/apps.cpython-38.pyc
+./histout.txt
+./regsnp_django_app_django_app.egg-info/entry_points.txt
