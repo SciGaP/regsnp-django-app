@@ -2,3 +2,10 @@ django>=1.11.16
 cclib
 numpy
 matplotlib
+psycopg2
+periodictable
+scipy
+dash
+pandas
+cclib
+logomaker

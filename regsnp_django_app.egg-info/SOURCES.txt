@@ -1,8 +1,8 @@
 README.md
 setup.py
-regsnp_django_app_django_app.egg-info/PKG-INFO
-regsnp_django_app_django_app.egg-info/SOURCES.txt
-regsnp_django_app_django_app.egg-info/dependency_links.txt
-regsnp_django_app_django_app.egg-info/entry_points.txt
-regsnp_django_app_django_app.egg-info/requires.txt
-regsnp_django_app_django_app.egg-info/top_level.txt
+regsnp_django_app.egg-info/PKG-INFO
+regsnp_django_app.egg-info/SOURCES.txt
+regsnp_django_app.egg-info/dependency_links.txt
+regsnp_django_app.egg-info/entry_points.txt
+regsnp_django_app.egg-info/requires.txt
+regsnp_django_app.egg-info/top_level.txt
