@@ -5,7 +5,10 @@ from django.http import JsonResponse
 
 @login_required
 def expviz(request):
-    return render(request, "regsnp_django_app/expviz.html")
+	#if request.method == 'GET':
+	#	render(request
+	#print(request.data)
+	return render(request, "regsnp_django_app/expviz.html")
     
 @login_required
 def splice_res(request):
