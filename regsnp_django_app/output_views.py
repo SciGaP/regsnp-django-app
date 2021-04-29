@@ -38,11 +38,12 @@ class SplicePredLink:
 	display_type = "link"
 	immediate = True
 	name = "Splicing File"
-
+	link = urls.get_download_url(experiment_output.value)
+	#print("FILE URL",link)
 	def generate_data(self, request, experiment_output, experiment, output_file=None):
 		return {
 			"label": "Analyze in MapTool",
-			"url": "www.google.com",
+			"url": "https://regsnps.ccbb.iupui.edu"+link,
 		}
 		
 		
