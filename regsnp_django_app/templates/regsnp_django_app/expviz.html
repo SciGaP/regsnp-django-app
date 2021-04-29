@@ -101,7 +101,9 @@
 var a="{{request}}";
 console.log('a');
 console.log(a.split("==")[1]);
-var data_file = "http://localhost:8000"+$('#urlVal').val(); 
+var b=a.split("==")[1].split('&')[0];
+var data_file=b;
+//var data_file = "http://localhost:8000"+$('#urlVal').val(); 
 $(document).ready(function() {
 	$.ajax({
 	    url: data_file,
