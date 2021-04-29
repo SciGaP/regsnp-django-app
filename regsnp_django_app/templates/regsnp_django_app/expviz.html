@@ -95,12 +95,12 @@
   <script src="https://www.biodalliance.org/release-0.13/dalliance-compiled.js" defer></script>
   <!--for IRNEO-->
   <script src="https://cdn.plot.ly/plotly-latest.min.js" ></script>
-  <script src="../../static/js/datatable.js"></script>
+  <script src="../../static/js/datatable.js" data-my_var_1="{{request}}"></script>
   
   <script type="text/javascript"> 
    var a="{{request}}";
    console.log('a');
-   console.log(a.split("==")[0]);
+   console.log(a.split("==")[1]);
 </script>
 
 <script>
