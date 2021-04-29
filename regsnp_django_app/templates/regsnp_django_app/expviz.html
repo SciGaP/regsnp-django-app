@@ -100,8 +100,9 @@
 <script>
 var a="{{request}}";
 console.log('a');
-console.log(a.split("==")[1]);
+//console.log(a.split("==")[1]);
 var b=a.split("==")[1].split('&')[0];
+console.log(b);
 var data_file=b;
 //var data_file = "http://localhost:8000"+$('#urlVal').val(); 
 $(document).ready(function() {
