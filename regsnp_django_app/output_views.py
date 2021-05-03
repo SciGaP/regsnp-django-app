@@ -112,14 +112,14 @@ class irneoSeq:
 	name = "irneoSeq"
 	def generate_data(self, request, experiment_output, experiment,output_file=None):
 		#print('output_file type',type(output_file))
-		#df=pandas.read_csv(output_file.read().decode())
+		df=pandas.read_csv(output_file.read().decode())
 		#os.path.join(os.path.dirname(output_file.name)
 		#df=pandas.read_csv(experiment_output.value)
 		#print('value',experiment_output.value)
 		#link = urls.get_download_url(experiment_output.value)
 		#print("FILE URL",link)
 		#print('directory',os.getcwd())
-		dfTest=pandas.read_json(output_file.read().decode())
+		#dfTest=pandas.read_json(output_file.read().decode())
 		#print(dfTest.head())
 		#print('contents',os.listdir('django_airavata/static'))
 		
