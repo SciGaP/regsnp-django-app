@@ -44,7 +44,7 @@ class SplicePredLink:
 		link = urls.get_download_url(experiment_output.value)
 		return {
 			"label": "Analyze in MapTool",
-			"url": "https://regsnps.ccbb.iupui.edu"+link,
+			"url": "https://regsnp_django_app/expviz/?=https://regsnps.ccbb.iupui.edu"+link,
 		}
 		
 		
