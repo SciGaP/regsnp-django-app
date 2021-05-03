@@ -19,12 +19,12 @@ setuptools.setup(
 	],
 	entry_points="""
 [airavata.output_view_providers]
-splice-pred-table = regsnp_django_app.output_views:SplicePredTable
 splice-pred-link = regsnp_django_app.output_views:SplicePredLink
-splice-plot = regsnp_django_app.output_views:SplicePlot
-irneo-plot = regsnp_django_app.output_views:irneoOut
 irneo-seq = regsnp_django_app.output_views:irneoSeq
 [airavata.djangoapp]
 regsnp_django_app = regsnp_django_app.apps:RegSnpAppConfig
 """,
 )
+
+
+

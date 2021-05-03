@@ -37,13 +37,13 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 class SplicePredLink:
 	display_type = "link"
 	immediate = True
-	name = "Splicing File"
+	name = "Splicing Output"
 	
 	#print("FILE URL",link)
 	def generate_data(self, request, experiment_output, experiment, output_file=None):
 		link = urls.get_download_url(experiment_output.value)
 		return {
-			"label": "Analyze in MapTool",
+			"label": "Output Visualization",
 			"url": "https://regsnps.ccbb.iupui.edu/regsnp_django_app/expviz/?=https://regsnps.ccbb.iupui.edu"+link,
 		}
 		
@@ -112,6 +112,9 @@ class irneoSeq:
 	name = "irneoSeq"
 	def generate_data(self, request, experiment_output, experiment,output_file=None):
 		print('output_file type',type(output_file))
+		df=pandas.to_csv(output_file.read().decode())
+		#os.path.join(os.path.dirname(output_file.name)
+		df=pandas.to_csv(experiment_output.value)
 		print('value',experiment_output.value)
 		link = urls.get_download_url(experiment_output.value)
 		print("FILE URL",link)
