@@ -111,64 +111,23 @@ class irneoSeq:
 	display_type = 'image'
 	name = "irneoSeq"
 	def generate_data(self, request, experiment_output, experiment,output_file=None):
-		print('output_file type',type(output_file))
-		df=pandas.read_csv(output_file.read().decode())
+		#print('output_file type',type(output_file))
+		#df=pandas.read_csv(output_file.read().decode())
 		#os.path.join(os.path.dirname(output_file.name)
-		df=pandas.read_csv(experiment_output.value)
-		print('value',experiment_output.value)
-		link = urls.get_download_url(experiment_output.value)
-		print("FILE URL",link)
-		print('directory',os.getcwd())
+		#df=pandas.read_csv(experiment_output.value)
+		#print('value',experiment_output.value)
+		#link = urls.get_download_url(experiment_output.value)
+		#print("FILE URL",link)
+		#print('directory',os.getcwd())
 		dfTest=pandas.read_json(output_file.read().decode())
-		print(dfTest.head())
-		print('contents',os.listdir('django_airavata/static'))
+		#print(dfTest.head())
+		#print('contents',os.listdir('django_airavata/static'))
 		
 		#os.system('wget localhost:8000/api/download?data-product-uri=airavata-dp%3A%2F%2Fa4d1e8cf-3879-469e-b391-bac0d953f72e')
 		
-		df=pandas.read_csv('/code/django_airavata/static/files/test_Aligned.sortedByCoord.out_intron_candidates_weak_bind_peptide_predict_result.txt',delimiter='\t')
 
-
-
-		mut_pep=df['mut_pep']
-
-		maxlen=max([len(pep) for pep in mut_pep])
-		#print(maxlen)
-
-		#need list for given position(11 total)
-		listOfPosLists=[]
-		for pos in range(maxlen):
-			posList=[]
-			for pep in mut_pep:
-				if pos<=len(pep)-1:
-					posList.append(pep[pos])
-			#else:
-			#	posList.append('')
-			listOfPosLists.append(posList)
-
-		#TAKES INTO ACCOUNT OVERHANG ON RIGHT with '', so must consider '' for all positions 
-		aminos=['A','R','N','D','C','Q','E','G','H','I','L','K','M','F','P','S','T','W','Y','V']
-
-		freqLists=[]
-		for l in listOfPosLists:
-			countDict=dict(Counter(l))
-			#print(countDict)
-			for a in aminos:
-				if a not in countDict:
-					countDict[a]=0
-			freqLists.append([x[1]/len(l) for x in sorted(countDict.items())])
-
-		#print(sum([x[1]/len(mut_pep) for x in freqLists[6]]))
-
-
-		#print(numpy.asarray(freqLists))
-
-		pwm=numpy.asarray(freqLists)
-
-		renderDf = pandas.DataFrame(pwm, columns = sorted(aminos))
-
-		logomaker.Logo(renderDf)
-
-		#print(htype)
+		
+		plt.plot(x,y)
 		
 		buffer = io.BytesIO()
 		plt.savefig(buffer, format='png')
